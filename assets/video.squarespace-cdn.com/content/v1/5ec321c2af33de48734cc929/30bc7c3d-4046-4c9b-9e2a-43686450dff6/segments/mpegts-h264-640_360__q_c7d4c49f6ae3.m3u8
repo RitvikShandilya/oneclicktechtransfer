@@ -1,0 +1,10 @@
+#EXTM3U
+#EXT-X-VERSION:7
+#EXT-X-TARGETDURATION:8
+#EXT-X-MEDIA-SEQUENCE:0
+#EXT-X-PLAYLIST-TYPE:VOD
+#EXT-X-KEY:METHOD=AES-128,URI="/oneclicktechtransfer/assets/video.squarespace-cdn.com/content/v1/5ec321c2af33de48734cc929/30bc7c3d-4046-4c9b-9e2a-43686450dff6/key/b03fa9fb1e8be26d578a9735ce218c680a556e997cf286f46fddd2d0aa997878",IV=0x606722c7ddd14ea3cd0e347e87e5ad97
+#EXTINF:8.000000,
+#EXT-X-BYTERANGE:1487472@0
+/oneclicktechtransfer/assets/video.squarespace-cdn.com/content/v1/5ec321c2af33de48734cc929/30bc7c3d-4046-4c9b-9e2a-43686450dff6/segments/mpegts-h264-640_360
+#EXT-X-ENDLIST

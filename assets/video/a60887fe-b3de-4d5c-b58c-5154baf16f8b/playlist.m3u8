@@ -1,0 +1,8 @@
+#EXTM3U
+#EXT-X-VERSION:7
+
+
+#EXT-X-STREAM-INF:BANDWIDTH=1741180,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=640x360
+/oneclicktechtransfer/assets/video.squarespace-cdn.com/content/v1/6a43a49a85331f6c0fe9ca02/a60887fe-b3de-4d5c-b58c-5154baf16f8b/segments/mpegts-h264-640_360__q_30d6424264ef.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=3484784,CODECS="avc1.640028,mp4a.40.2",RESOLUTION=1920x1080
+/oneclicktechtransfer/assets/video.squarespace-cdn.com/content/v1/6a43a49a85331f6c0fe9ca02/a60887fe-b3de-4d5c-b58c-5154baf16f8b/segments/mpegts-h264-1920_1080__q_30d6424264ef.m3u8

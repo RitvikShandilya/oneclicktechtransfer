@@ -1,0 +1,9 @@
+#EXTM3U
+#EXT-X-VERSION:7
+
+#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="audio",LANGUAGE="und",NAME="Undetermined",AUTOSELECT=YES,DEFAULT=NO,URI="/oneclicktechtransfer/assets/video.squarespace-cdn.com/content/v1/6a43a49a85331f6c0fe9ca02/079ef1b6-9513-41d1-9274-d3eaa1e533a8/segments/mpegts-aac-1-und__q_ccd3047a8da5.m3u8"
+
+#EXT-X-STREAM-INF:BANDWIDTH=1890329,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=360x640,AUDIO="audio"
+/oneclicktechtransfer/assets/video.squarespace-cdn.com/content/v1/6a43a49a85331f6c0fe9ca02/079ef1b6-9513-41d1-9274-d3eaa1e533a8/segments/mpegts-h264-360_640__q_ccd3047a8da5.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=3632231,CODECS="avc1.64002a,mp4a.40.2",RESOLUTION=1080x1920,AUDIO="audio"
+/oneclicktechtransfer/assets/video.squarespace-cdn.com/content/v1/6a43a49a85331f6c0fe9ca02/079ef1b6-9513-41d1-9274-d3eaa1e533a8/segments/mpegts-h264-1080_1920__q_ccd3047a8da5.m3u8
