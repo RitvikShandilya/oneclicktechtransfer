@@ -1,9 +1,9 @@
 #EXTM3U
 #EXT-X-VERSION:7
 
-#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="audio",LANGUAGE="eng",NAME="English",AUTOSELECT=YES,DEFAULT=YES,URI="/oneclicktechtransfer/assets/video.squarespace-cdn.com/content/v1/6a43a49a85331f6c0fe9ca02/2d251204-0aa1-4724-bce3-f83d933521ef/segments/mpegts-aac-1-eng__q_a88b2befeb91.m3u8"
+#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="audio",LANGUAGE="eng",NAME="English",AUTOSELECT=YES,DEFAULT=YES,URI="https://ritvikshandilya.github.io/oneclicktechtransfer/assets/video.squarespace-cdn.com/content/v1/6a43a49a85331f6c0fe9ca02/2d251204-0aa1-4724-bce3-f83d933521ef/segments/mpegts-aac-1-eng__q_a88b2befeb91.m3u8"
 
 #EXT-X-STREAM-INF:BANDWIDTH=1866775,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=360x640,AUDIO="audio"
-/oneclicktechtransfer/assets/video.squarespace-cdn.com/content/v1/6a43a49a85331f6c0fe9ca02/2d251204-0aa1-4724-bce3-f83d933521ef/segments/mpegts-h264-360_640__q_a88b2befeb91.m3u8
+https://ritvikshandilya.github.io/oneclicktechtransfer/assets/video.squarespace-cdn.com/content/v1/6a43a49a85331f6c0fe9ca02/2d251204-0aa1-4724-bce3-f83d933521ef/segments/mpegts-h264-360_640__q_a88b2befeb91.m3u8
 #EXT-X-STREAM-INF:BANDWIDTH=3583136,CODECS="avc1.640028,mp4a.40.2",RESOLUTION=1080x1920,AUDIO="audio"
-/oneclicktechtransfer/assets/video.squarespace-cdn.com/content/v1/6a43a49a85331f6c0fe9ca02/2d251204-0aa1-4724-bce3-f83d933521ef/segments/mpegts-h264-1080_1920__q_a88b2befeb91.m3u8
+https://ritvikshandilya.github.io/oneclicktechtransfer/assets/video.squarespace-cdn.com/content/v1/6a43a49a85331f6c0fe9ca02/2d251204-0aa1-4724-bce3-f83d933521ef/segments/mpegts-h264-1080_1920__q_a88b2befeb91.m3u8
