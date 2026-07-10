@@ -29,7 +29,7 @@
 
   function toHex(buffer) {
     return Array.prototype.map.call(new Uint8Array(buffer), function (byte) {
-      return byte.toString(16).padStart(2, "0");
+      return ("00" + byte.toString(16)).slice(-2);
     }).join("");
   }
 
@@ -66,36 +66,48 @@
   function buildGate() {
     var existingGate = document.getElementById("octt-password-gate");
 
-    if (existingGate || getStoredAccess() === PASSWORD_HASH) {
-      if (getStoredAccess() === PASSWORD_HASH) {
-        setLockedState(false);
-      }
+    if (getStoredAccess() === PASSWORD_HASH) {
+      unlock();
       return;
     }
 
-    var gate = document.createElement("div");
-    gate.id = "octt-password-gate";
-    gate.setAttribute("role", "dialog");
-    gate.setAttribute("aria-modal", "true");
-    gate.setAttribute("aria-label", "Password required");
-    gate.innerHTML = [
-      '<div class="octt-password-card">',
-      '  <div class="octt-password-lock" aria-hidden="true"></div>',
-      '  <form class="octt-password-form">',
-      '    <div class="octt-password-input-row">',
-      '      <input class="octt-password-input" name="password" type="password" placeholder="Password" autocomplete="current-password" required>',
-      '      <button class="octt-password-submit" type="submit" aria-label="Submit password"></button>',
-      '    </div>',
-      '    <p class="octt-password-error" aria-live="polite"></p>',
-      '  </form>',
-      '</div>'
-    ].join("");
+    var gate = existingGate;
 
-    document.body.appendChild(gate);
+    if (!gate) {
+      gate = document.createElement("div");
+      gate.id = "octt-password-gate";
+      gate.setAttribute("role", "dialog");
+      gate.setAttribute("aria-modal", "true");
+      gate.setAttribute("aria-label", "Password required");
+      gate.innerHTML = [
+        '<div class="octt-password-card">',
+        '  <div class="octt-password-lock" aria-hidden="true"></div>',
+        '  <form class="octt-password-form">',
+        '    <div class="octt-password-input-row">',
+        '      <input class="octt-password-input" name="password" type="password" placeholder="Password" autocomplete="current-password" required>',
+        '      <button class="octt-password-submit" type="submit" aria-label="Submit password"></button>',
+        '    </div>',
+        '    <p class="octt-password-error" aria-live="polite"></p>',
+        '  </form>',
+        '</div>'
+      ].join("");
+
+      document.body.appendChild(gate);
+    }
+
+    if (gate.getAttribute("data-octt-ready") === "true") {
+      return;
+    }
+
+    gate.setAttribute("data-octt-ready", "true");
 
     var form = gate.querySelector(".octt-password-form");
     var input = gate.querySelector(".octt-password-input");
     var button = gate.querySelector(".octt-password-submit");
+
+    if (!form || !input || !button) {
+      return;
+    }
 
     window.setTimeout(function () {
       input.focus();
@@ -116,9 +128,9 @@
         input.value = "";
         input.focus();
         showError("Incorrect password.");
-      }).catch(function () {
+      }, function () {
         showError("Password verification is unavailable in this browser.");
-      }).finally(function () {
+      }).then(function () {
         button.disabled = false;
       });
     });

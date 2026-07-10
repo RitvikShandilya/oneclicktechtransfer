@@ -93,6 +93,58 @@
     background: #000;
     border-radius: inherit;
   }
+  .fe-block-2cf3d3ece33a093dd9a2,
+  .fe-block-ba8370518db272352514,
+  .fe-block-56fbb999fdcaeee86617,
+  .fe-block-9309d34ecfe0f5a931f2,
+  .fe-block-a40dcf3faa61c9966a95,
+  .fe-block-43093423a5517a3b42b7,
+  .fe-block-f7efff8aab213fa2fa68,
+  .fe-block-2aa5bc4e6b940b611a37,
+  .fe-block-1eb0f4abe7304287833e,
+  .fe-block-0129b93c369d3cb65e8e {
+    display: none !important;
+  }
+  .fe-6a43eb4486084e6242e1adff {
+    --octt-arrow-blue: #337fb8;
+    position: relative;
+  }
+  .fe-6a43eb4486084e6242e1adff::after {
+    background: linear-gradient(90deg, rgba(51, 127, 184, 0), rgba(51, 127, 184, .35) 25%, var(--octt-arrow-blue) 72%, var(--octt-arrow-blue));
+    border-radius: 999px;
+    content: "";
+    height: 6px;
+    left: 50%;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 220px;
+    z-index: 2;
+  }
+  .fe-6a43eb4486084e6242e1adff::before {
+    border-right: 6px solid var(--octt-arrow-blue);
+    border-top: 6px solid var(--octt-arrow-blue);
+    content: "";
+    height: 44px;
+    left: calc(50% + 82px);
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 44px;
+    z-index: 3;
+  }
+  @media (max-width: 767px) {
+    .fe-6a43eb4486084e6242e1adff::after {
+      width: 190px;
+    }
+    .fe-6a43eb4486084e6242e1adff::before {
+      height: 38px;
+      left: calc(50% + 70px);
+      width: 38px;
+    }
+  }
 </style>
 </head>
 
@@ -108,6 +160,18 @@
     "
     tabindex="-1"
   >
+    <div id="octt-password-gate" role="dialog" aria-modal="true" aria-label="Password required">
+      <div class="octt-password-card">
+        <div class="octt-password-lock" aria-hidden="true"></div>
+        <form class="octt-password-form">
+          <div class="octt-password-input-row">
+            <input class="octt-password-input" name="password" type="password" placeholder="Password" autocomplete="current-password" required>
+            <button class="octt-password-submit" type="submit" aria-label="Submit password"></button>
+          </div>
+          <p class="octt-password-error" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
     <div
       id="siteWrapper"
       class="clearfix site-wrapper"
@@ -17696,7 +17760,7 @@ system_desktop
         class="embed-block-wrapper"
         style="padding-bottom:0;"
       >
-        <div class="sqs-native-video octt-profile-video"><div class="native-video-player"><video class="octt-person-video" src="https://voicerr.fra1.cdn.digitaloceanspaces.com/Jacques%20Duret.mp4" controls playsinline preload="metadata"></video></div></div>
+        <div class="sqs-native-video octt-profile-video"><div class="native-video-player"><video class="octt-person-video" src="/assets/videos/people/jacques-duret.mp4" controls playsinline preload="metadata"></video></div></div>
       </div>
       
       
@@ -18441,7 +18505,7 @@ system_desktop
         class="embed-block-wrapper"
         style="padding-bottom:0;"
       >
-        <div class="sqs-native-video octt-profile-video"><div class="native-video-player"><video class="octt-person-video" src="https://voicerr.fra1.cdn.digitaloceanspaces.com/Alex_Relling.mp4" controls playsinline preload="metadata"></video></div></div>
+        <div class="sqs-native-video octt-profile-video"><div class="native-video-player"><video class="octt-person-video" src="/assets/videos/people/alex-relling.mp4" controls playsinline preload="metadata"></video></div></div>
       </div>
       
       
@@ -18742,7 +18806,7 @@ system_desktop
         class="embed-block-wrapper"
         style="padding-bottom:0;"
       >
-        <div class="sqs-native-video octt-profile-video"><div class="native-video-player"><video class="octt-person-video" src="https://voicerr.fra1.cdn.digitaloceanspaces.com/Marcel%20Mueller.MOV" controls playsinline preload="metadata"></video></div></div>
+        <div class="sqs-native-video octt-profile-video"><div class="native-video-player"><video class="octt-person-video" src="/assets/videos/people/marcel-mueller.mp4" controls playsinline preload="metadata"></video></div></div>
       </div>
       
       
@@ -19043,7 +19107,7 @@ system_desktop
         class="embed-block-wrapper"
         style="padding-bottom:0;"
       >
-        <div class="sqs-native-video octt-profile-video"><div class="native-video-player"><video class="octt-person-video" src="https://voicerr.fra1.cdn.digitaloceanspaces.com/OlivierMichel.mp4" controls playsinline preload="metadata"></video></div></div>
+        <div class="sqs-native-video octt-profile-video"><div class="native-video-player"><video class="octt-person-video" src="/assets/videos/people/olivier-michel.mp4" controls playsinline preload="metadata"></video></div></div>
       </div>
       
       
@@ -19344,7 +19408,7 @@ system_desktop
         class="embed-block-wrapper"
         style="padding-bottom:0;"
       >
-        <div class="sqs-native-video octt-profile-video"><div class="native-video-player"><video class="octt-person-video" src="/assets/videos/people/sven-asche.mp4" controls playsinline preload="metadata"></video></div></div>
+        <div class="sqs-native-video octt-profile-video"><div class="native-video-player"><video class="octt-person-video" src="/assets/videos/people/sven.mp4" controls playsinline preload="metadata"></video></div></div>
       </div>
       
       
@@ -19645,7 +19709,7 @@ system_desktop
         class="embed-block-wrapper"
         style="padding-bottom:0;"
       >
-        <div class="sqs-native-video octt-profile-video"><div class="native-video-player"><video class="octt-person-video" src="https://voicerr.fra1.cdn.digitaloceanspaces.com/Christian.mov" controls playsinline preload="metadata"></video></div></div>
+        <div class="sqs-native-video octt-profile-video"><div class="native-video-player"><video class="octt-person-video" src="/assets/videos/people/christian-lenz.mp4" controls playsinline preload="metadata"></video></div></div>
       </div>
       
       
@@ -19946,7 +20010,7 @@ system_desktop
         class="embed-block-wrapper"
         style="padding-bottom:0;"
       >
-        <div class="sqs-native-video octt-profile-video"><div class="native-video-player"><video class="octt-person-video" src="https://voicerr.fra1.cdn.digitaloceanspaces.com/Nicholas.mp4" controls playsinline preload="metadata"></video></div></div>
+        <div class="sqs-native-video octt-profile-video"><div class="native-video-player"><video class="octt-person-video" src="/assets/videos/people/nicholas.mp4" controls playsinline preload="metadata"></video></div></div>
       </div>
       
       
@@ -20247,7 +20311,7 @@ system_desktop
         class="embed-block-wrapper"
         style="padding-bottom:0;"
       >
-        <div class="sqs-native-video octt-profile-video"><div class="native-video-player"><video class="octt-person-video" src="https://voicerr.fra1.cdn.digitaloceanspaces.com/Phuong%20Ho.MOV" controls playsinline preload="metadata"></video></div></div>
+        <div class="sqs-native-video octt-profile-video"><div class="native-video-player"><video class="octt-person-video" src="/assets/videos/people/phuong-ho.mp4" controls playsinline preload="metadata"></video></div></div>
       </div>
       
       
@@ -20548,7 +20612,7 @@ system_desktop
         class="embed-block-wrapper"
         style="padding-bottom:0;"
       >
-        <div class="sqs-native-video octt-profile-video"><div class="native-video-player"><video class="octt-person-video" src="https://voicerr.fra1.cdn.digitaloceanspaces.com/Nadya.mp4" controls playsinline preload="metadata"></video></div></div>
+        <div class="sqs-native-video octt-profile-video"><div class="native-video-player"><video class="octt-person-video" src="/assets/videos/people/nadya.mp4" controls playsinline preload="metadata"></video></div></div>
       </div>
       
       
